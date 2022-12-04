@@ -1,0 +1,25 @@
+main:
+  - name: Why Productive?                                             
+    url: "#features"
+  - name: Services
+    url: "#services"
+  - name: How It Works
+    url: "#how-its-works"
+  - name: Pricing
+    url: "#price"
+    
+
+right:
+  - name: Sign In 
+    url: 'https://productively.app/login'
+    button: true
+    class: bordered
+  - name: Try Free
+    url: 'https://productively.app/register'
+    button: true
+
+    
+
+
+
+    

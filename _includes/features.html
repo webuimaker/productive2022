@@ -1,0 +1,100 @@
+{% assign features = site.home.feature %}
+
+{% if features.enabled %}    
+    <section id="features" class="section features" style="background-color: {{item.background}};">
+        <div class="section-title">
+            <div class="container">  
+                <h6>{{features.smallHeading}}</h6>
+                <h2>{{features.heading}}</h2>
+                <p>{{features.description}}</p>
+            </div>
+          </div>
+        <div class="container-fluid px-0">  
+            
+          
+          {% for item in features.items %}
+            {% assign mod = forloop.index | modulo: 2 %} 
+            <div class="content  {% if mod != 0 %} left{% endif %}">
+                <div class="container">
+
+          <div class="row">
+            <div class="col-md-7 text-center {% if mod != 0 %} order-1 order-md-2{% endif %}" data-aos="fade-left">
+              <img src="{{item.image}}" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-5 pt-5 {% if mod != 0 %} order-2 order-md-1{% endif %} align-start" data-aos="fade-up">
+                {% if item.subHeading %}
+                    <h6>{{item.subHeading}}</h6>
+                {% endif %}
+              <h3>{{item.heading}}</h3>
+              <div class="body-content">
+                {{item.body}}
+              </div>
+              {% if item.highlightText %}
+                <p class="fst-italic">
+                    {{item.highlightText}}
+                </p>
+                
+            {% endif %}
+            {% if item.btnText %}
+            <a href="{{item.btnUrl}}" class="btn btn-bordered">{{item.btnText}}</a>
+              
+             {% endif %}
+               
+            </div>
+          </div>
+        </div>
+
+        <!-- <img src="" alt="feature" class="features-shape {% if mod != 0 %} left {% endif %}"> -->
+
+        </div>
+          {% endfor %}
+
+
+  
+        </div>
+      </section><!-- End App Features Section -->
+{% endif %}
+
+
+      {% assign approchsec = site.home.approch %}
+
+{% if approchsec.enabled %}
+    <section class="section approch bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center mb-0  mb-md-4">
+                    <div class="sec-heading ">                    
+                        <h2>{{approchsec.heading}}</h2>
+                        {% if approchsec.subHeading %}
+                            <h3>{{approchsec.subHeading}}</h3>
+                        {% endif %}
+                        
+                        {% if approchsec.smallHeading %}
+                            <h5>{{approchsec.smallHeading}}</h5>
+                        {% endif %}
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for infos in approchsec.info %}
+                    <div class="col-md-6 text-center approch-box">
+                        <div class="bg-heading">{{infos.title}}</div>
+                        <div class="icon">
+                            <img src="{{infos.icon}}" alt="{{infos.title}}" class="img-fluid">
+                        </div>  
+                        <div class="image">
+                            <img src="{{infos.image}}" alt="{{infos.title}}"  class="img-fluid">
+                        </div>
+                        <p>{{infos.text}}</p>
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+
+        </div>
+    </section>
+{% endif %}

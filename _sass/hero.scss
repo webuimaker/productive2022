@@ -1,0 +1,183 @@
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0 90px 0;
+    // background: linear-gradient(103.84deg, #0054C4 0%, #217CF7 100%);
+    // background: linear-gradient(192.89deg, #156EE5 0%, #2559AC 100.02%);
+    background: url(/assets/images/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% -30px ;
+    color: $white;
+    @include devices(tablet) {
+    background-position: 100% 0px ;
+
+    }
+    .hero-inner{
+        position: relative;
+        z-index: 1;
+
+        .btn{
+          background: #FFFFFF;
+          border-radius: 52px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 32px;
+          color: #0D64D9;
+          padding: 4px 16px;
+          box-shadow: none;
+          position: relative;
+
+          &::before{            
+            background: rgba(255,255,255,0.3);
+            content: "";
+            width: 106%;
+            height: 122%;
+            display: block;
+            position: absolute;
+            left: -3%;
+            top: -10%;
+            border-radius: 52px;
+            z-index: -1;
+          }
+        }
+    }
+    // &::after{
+    //     content: "";
+    //     position: absolute;
+    //     width: 259px;
+    //     height: 365px;
+    //     left: 9%;
+    //     bottom: 90px;
+    //     background-image: url(/assets/images/hero-left.png);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+
+    // &::before{        
+    //     content: "";
+    //     position: absolute;
+    //     width: 270px;
+    //     height: 365px;
+    //     right: 7%;
+    //     top: 90px;
+    //     background-image: url(/assets/images/hero-right.png);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+    h1 {        
+        font-style: normal;
+        font-size: 56px;
+        line-height: 56px;
+        color: $white;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        position: relative;
+
+        img{
+          position: absolute;
+          bottom: -12px;
+          left: 0px;
+          right: 0px;
+          margin: auto;
+        }
+        
+      }
+
+      h6{
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      p{      
+        color: $white;
+        margin: 35px 0px 55px 0px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+      }
+      .hero-img{
+          // padding: 0px 40px 30px 0px;
+          position: relative;
+
+          // &:before{
+          //   content: "";
+          //   border: 5px solid #FFFFFF;
+          //   box-sizing: border-box;
+          //   border-radius: 15px;
+          //   height: 85%;
+          //   width: 90%;
+          //   display: block;
+          //   position: absolute;
+          //   top: 63px;
+          //   right: 0px;
+          //   z-index: 0;
+          // }
+          img{
+              z-index: 1;
+          }
+      }
+  }
+  
+  @media (max-width: 991px) {
+    #hero {
+      text-align: center;
+    }
+    #hero .btn + .btn {
+      margin: 0 10px;
+    }
+    #hero .hero-img {
+      text-align: center;
+    }
+    #hero .hero-img img {
+      width: 60%;
+    }
+  }
+  @include devices(tablet) {
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+    #hero .hero-img img {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 575px) {
+    #hero {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      .hero-img{
+        &::before{
+          top: 40px;
+          width: 85%;
+          left: 30px;
+        }
+        img {
+          width: 90%;
+        }
+      }
+
+    }
+
+    
+
+
+  }
+  

@@ -1,0 +1,178 @@
+title: Productive
+email: your-email@example.com
+logo: "/assets/images/logo-full-w.png"
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username:  
+
+home:
+  feature:
+    enabled: true
+    background:  "rgba(45, 107, 207, 0.04)"
+    heading: "Intuitive And Easy To Use"
+    smallHeading: "FEATURE RICH"
+    description: Powerful features will help you stay efficient and organized. Here are some <br> of the benefits of using  a time tracking system
+    items:
+    - heading: Custom Time Tracking
+      subHeading: POWERFUL AND EASY TO USE
+      body: "Customize the way you measure time to exactly match your needs. Intuitive and easy to setup to allow you to track time as detailed as you want.
+        <ul><li>Time tracking </li><li>Manual entry</li><li>Weekly timesheets</li><li>Mobile app on the go</li> </ul>"
+      highlightText: 
+      image:  "/assets/images/feature1.png"
+      btnText: Learn More
+      btnUrl: "#"
+    - heading: Powerful Reporting
+      subHeading: DESIGNED WITH YOU IN MIND
+      body: "Tailor made analytics with powerful filtering and grouping capabilities to generate insights and reports to support payroll, accounting, invoicing and other important business functions."
+      highlightText: 
+      image:  "/assets/images/feature2.png"
+      btnText: Learn More
+      btnUrl: 
+    - heading: Always In Control
+      subHeading: FLEXIBLE YET POWERFUL
+      body: "Configure up to file levels of measuring time, setup budgets and estimates, track expenses to collect data that you can use to analyze your processes and execution of everyday activities."
+      highlightText: 
+      image:  "/assets/images/feature3.png"
+      btnText: Learn More
+      btnUrl: 
+  services:
+    enabled: true
+    background: "#F8F9FC"
+    heading: "Path To Improved Productivity"
+    smallHeading: "FLEXIBLE YET POWERFUL"
+    description: Use the data you collect and follow simple framework below to improve<br> your processes and reduce the cost of doing business
+    btnText: See All Services
+    btnUrl:     
+    items:
+    - heading: Track Time
+      body: 	Measure and record time throughout your <br> business to capture activities and time spent.
+      icon:  "/assets/images/time.svg"
+      btnText: 
+      btnUrl: "#"
+    - heading: Report And Visualize
+      body: Use time entries to power reports and<br> graphs to visualize how time is utilized in the business.
+      icon:  "/assets/images/report.svg"
+      btnText: 
+      btnUrl: "#"
+    - heading: Invoice & Get Paid
+      body: Analyze reports and insights to identify<br> areas for improvement and implement more detailed tracking to refine processes.
+      icon:  "/assets/images/invoice.svg"
+      btnText: 
+      btnUrl: "#"
+  price:
+    enabled: true
+    background: ""
+    heading: "All Features And Future Upgrades Included.  One Simple Cost."
+    smallHeading: "best Price"
+    description: "At Productively we are committed to providing a feature rich experience <br> without the hidden costs. Sign up today to secure this offer. Start your 14 day <br>free trial now."
+    items:
+    - heading: 
+      price: $5
+      plan: per user/month
+      body: 
+      advantage:
+      - text: "No Creedit Card Required"
+      - text: "Easy time tracking"
+      - text: "Apps for all your devices"
+      - text: Scale your team easily as you grow
+      - text: Insight into your projects and team
+      - text: Support from real humans
+      btnText: "Start your free trial!"
+      btnUrl: "https://productively.app/register"
+  subscribe:
+    enabled: false
+    background: "#F8F9FC"
+    heading: "Subscribe our Newslatter"
+    smallHeading: "what’s next?"
+    description: Get notification about tips, new product and exclusive promo news just for you.
+
+
+
+
+
+footer:
+  copyright: © 2022 Productively All Rights Reserved.
+  about: We simplify time tracking and help you improve your business. Our mantra is that software should be flexible enough to suit your needs.
+  leftcolHeading: Links
+  centercolHeading:  ""
+  rightcolHeading: "Our Office"
+  leftcol:
+  - link: "#hero"
+    text: Home
+  - link: "#services"
+    text: Services
+  - link: "#how-its-works"
+    text: How It Works
+  - link: "/privacy-policy"
+    text: Privacy Policy
+  # centercol:
+  # - text: Partners
+  #   link: "#home"
+  #   pageType: "same"
+  # - text: Careers
+  #   link: "#how-its-works"
+  #   pageType: "same"
+  # - text: Press
+  #   link: "#about"
+  #   pageType: "same"
+  # - text: Community
+  #   link: "#about"
+  #   pageType: "Community"
+  rightcol:
+  - location: Calgary
+    address: " #430, 404 6th Ave SW <br> AB, CANADA, T2P 0R9"
+
+
+social:
+  enable: 
+  items:
+  - icon: "bx bxl-facebook"
+    title: "facebook"
+    link: "#"
+  - icon: "bx bxl-instagram"
+    title: "instagram"
+    link: "#"
+  - icon: "bx bxl-twitter"
+    title: "twitter"
+    link: "#"
+  - icon: "bx bxl-youtube"
+    title: "youtube"
+    link: "#"
+
+      
+
+ 
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+# Build settings
+// theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,27 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex">
+    <div class="container hero-inner">
+      <div class="row">
+        <div class="col-12 col-sm-10 offset-sm-1 d-lg-flex flex-lg-column justify-content-center text-center  pt-5 pt-lg-0 order-1" data-aos="fade-up">
+          <div class="text-left">
+            {% if page.hero.subHeading != "" %}<h6>{{ page.hero.subHeading }}</h6>{% endif %}
+            <h1>{{ page.hero.heading }}
+              <img src="/assets/images/hero-header.svg" alt="hero header">
+            </h1>
+            {% if page.hero.text != "" %} <p>{{ page.hero.text  }}</p> {% endif %}
+            
+          </div>
+        </div>
+        {% if page.hero.image != "" %} <div class="col-10 offset-1 d-lg-flex flex-lg-column align-items-stretch order-2 hero-img text-center" data-aos="fade-up">
+          <img src="{{ page.hero.image }}" class="img-fluid" alt="">
+        </div>
+        {% endif %}
+
+        {% if page.hero.btnText != "" %}
+        <div class="col-12 col-sm-10 offset-sm-1 justify-content-center order-3 text-center">
+           <a href="{{ page.hero.btnUrl }}" class="btn">{{ page.hero.btnText }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section><!-- End Hero -->

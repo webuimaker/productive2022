@@ -1,0 +1,26 @@
+{% assign data = site.home.subscribe %}
+
+{% if data.enabled %}    
+    <section id="features" class="section newsletter" style="background-color: {{data.background}};">
+        <div class="container">  
+          <div class="section-title">
+            <h6>{{data.smallHeading}}</h6>
+            <h2>{{data.heading}}</h2>
+            <p>{{data.description}}</p>
+          </div>
+          <div class="row content row-cols-1 row-cols-sm-2 justify-content-center"> 
+            <div class="col">                
+                <form action="" method="post">
+                  <i class="bi bi-envelope"></i>
+                    <input type="email" name="email" placeholder="Enter your email address"><input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+
+
+
+  
+        </div>
+      </section><!-- End App Features Section -->
+{% endif %}
+
