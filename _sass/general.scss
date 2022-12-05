@@ -188,10 +188,7 @@ body {
         text-align: center;
         color: $heading;
         font-size: 24px;
-        line-height: 36px;
-        text-align: center;
         text-transform: capitalize;
-        color: #152C5B;
       }
       p{
         text-align: center;
@@ -214,6 +211,10 @@ body {
   .content {
     padding: 50px 70px;
     position: relative;
+    @include devices(mobile) {
+      padding: 30px 15px;
+    }
+
     &::after{
       content: "";
       border-bottom: 1px solid #F1F1F3;

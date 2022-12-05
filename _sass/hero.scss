@@ -47,29 +47,7 @@
           }
         }
     }
-    // &::after{
-    //     content: "";
-    //     position: absolute;
-    //     width: 259px;
-    //     height: 365px;
-    //     left: 9%;
-    //     bottom: 90px;
-    //     background-image: url(/assets/images/hero-left.png);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
 
-    // &::before{        
-    //     content: "";
-    //     position: absolute;
-    //     width: 270px;
-    //     height: 365px;
-    //     right: 7%;
-    //     top: 90px;
-    //     background-image: url(/assets/images/hero-right.png);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
     h1 {        
         font-style: normal;
         font-size: 56px;
@@ -79,6 +57,7 @@
         text-transform: capitalize;
         text-align: center;
         position: relative;
+        
 
         img{
           position: absolute;
@@ -97,6 +76,9 @@
         line-height: 100%;
         text-align: center;
         text-transform: capitalize;
+        @include devices(mobile) {
+          font-size: 24px;
+        }
       }
       p{      
         color: $white;
@@ -170,7 +152,7 @@
           left: 30px;
         }
         img {
-          width: 90%;
+          width: 100%;
         }
       }
 

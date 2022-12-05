@@ -12,13 +12,13 @@
             
           </div>
         </div>
-        {% if page.hero.image != "" %} <div class="col-10 offset-1 d-lg-flex flex-lg-column align-items-stretch order-2 hero-img text-center" data-aos="fade-up">
+        {% if page.hero.image != "" %} <div class="col-12 col-sm-10 offset-sm-1 d-lg-flex flex-lg-column align-items-stretch order-2 hero-img text-center" data-aos="fade-up">
           <img src="{{ page.hero.image }}" class="img-fluid" alt="">
         </div>
         {% endif %}
 
         {% if page.hero.btnText != "" %}
-        <div class="col-12 col-sm-10 offset-sm-1 justify-content-center order-3 text-center">
+        <div class="col-12 col-sm-10 offset-sm-1 justify-content-center order-3 text-center mt-4 mt-sm-0">
            <a href="{{ page.hero.btnUrl }}" class="btn">{{ page.hero.btnText }}</a>
         </div>
         {% endif %}
