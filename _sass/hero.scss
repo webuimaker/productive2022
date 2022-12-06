@@ -9,10 +9,11 @@
     padding: 150px 0 90px 0;
     // background: linear-gradient(103.84deg, #0054C4 0%, #217CF7 100%);
     // background: linear-gradient(192.89deg, #156EE5 0%, #2559AC 100.02%);
-    background: url(/assets/images/hero-bg.svg);
+    // background: url(/assets/images/hero-bg.svg);
+    background: url(/assets/images/hero-bg2.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% -30px ;
+    // background-position: 100% -30px ;
     color: $white;
     @include devices(tablet) {
     background-position: 100% 0px ;
@@ -50,7 +51,7 @@
 
     h1 {        
         font-style: normal;
-        font-size: 56px;
+        font-size: 54px;
         line-height: 56px;
         color: $white;
         font-weight: 700;
@@ -109,6 +110,57 @@
               z-index: 1;
           }
       }
+
+      &.v1{
+        h1, h6, p{
+          text-align: left;
+        }
+        h6{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 32px;
+          margin-top: 50px;
+          @include devices(mobile) {
+            margin-top: 0px;
+        
+            }
+        }
+        h1{
+          margin-bottom: 32px;
+          span{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 100%;
+            text-align: center;
+            text-transform: capitalize;
+          }
+        }
+
+        .hero-img {
+          position: relative;
+          @include devices(mobile)  {
+            margin-top: 20px;
+          }
+
+          &::after{
+            background: url(/assets/images/hero-rect.svg);
+            background-repeat: no-repeat;
+            content: "";
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 76px;
+            height: 76px;
+            @include devices(mobile)  {
+              width: 32px;
+              height: 32px;
+              background-size: 100%;
+              right: 10px;
+            }
+          }
+        }
+      }
   }
   
   @media (max-width: 991px) {
@@ -122,7 +174,7 @@
       text-align: center;
     }
     #hero .hero-img img {
-      width: 60%;
+      width: 100%;
     }
   }
   @include devices(tablet) {
