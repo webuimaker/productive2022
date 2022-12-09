@@ -35,7 +35,7 @@ home:
       btnUrl: 
     - heading: Always In Control
       subHeading: FLEXIBLE YET POWERFUL
-      body: "Configure up to file levels of measuring time, setup budgets and estimates, track expenses to collect data that you can use to analyze your processes and execution of everyday activities."
+      body: "Configure up to five levels of measuring time, setup budgets and estimates, track expenses to collect data that you can use to analyze your processes and execution of everyday activities."
       highlightText: 
       image:  "/assets/images/feature3.png"
       btnText: Learn More
@@ -46,7 +46,7 @@ home:
     heading: "Path To Improved Productivity"
     smallHeading: "FLEXIBLE YET POWERFUL"
     description: Use the data you collect and follow simple framework below to improve<br> your processes and reduce the cost of doing business
-    btnText: See All Services
+    btnText: 
     btnUrl:     
     items:
     - heading: Track Time
@@ -76,7 +76,7 @@ home:
       plan: per user/month
       body: 
       advantage:
-      - text: "No Creedit Card Required"
+      - text: "No Credit Card Required"
       - text: "Easy time tracking"
       - text: "Apps for all your devices"
       - text: Scale your team easily as you grow
